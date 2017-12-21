@@ -8,7 +8,7 @@ const GeoSchema	= new Schema({
 	},
 	coordinates:{
 		type	:[Number],
-		index	:2dsphere
+		index	:"2dsphere"
 	}
 });
 
