@@ -5,6 +5,7 @@ var routes = require('./routes/api');
 
 const app 	  = express();
 
+app.use(express.static('public'))
 
 mongoose.connect('mongodb://localhost/ninjago', { useMongoClient: true });
 mongoose.Promise 	= global.Promise;
